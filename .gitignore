@@ -1,0 +1,5 @@
+# VS Code hidden folder
+.vscode
+
+# OSX hidden files
+.DS_Store
