@@ -84,8 +84,6 @@ resources: #{}
     cpu: 100m
     memory: 512Mi
 
-envFrom: []
-
 env: #[]
   - name: RAPIDAPI_KEY
     value: "8829f5a5a9msh90a9323ec3e41cdp1d44e0jsndd6defdd77af"
