@@ -67,7 +67,7 @@ ingress:
     appgw.ingress.kubernetes.io/appgw-ssl-certificate: certificate-upload
     appgw.ingress.kubernetes.io/health-probe-path: /healthcheck
   hosts:
-    - host: cirrus1-service.dev-azure.saas.aladdinweb.dev
+    - host: cirrus.dev
       paths:
         - path: /*
           pathType: ImplementationSpecific
