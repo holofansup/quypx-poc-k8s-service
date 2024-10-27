@@ -1,0 +1,19 @@
+controller:
+  replicaCount: 1  # Number of replicas
+  service:
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-backend-protocol: tcp
+      service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: 'true'
+      service.beta.kubernetes.io/aws-load-balancer-type: nlb
+  ingressClassResource:
+    name: nginx
+    default: true  # Set this Ingress class as default
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+defaultBackend:
+  enabled: true  # Enable a default backend for handling 404 responses
