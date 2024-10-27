@@ -10,6 +10,4 @@ controller:
 persistence:
   enabled: true
   storageClass: gp2
-  accessModes:
-    - ReadWriteOnce
   size: 20Gi
