@@ -1,0 +1,9 @@
+controller:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hostname: quypx-jenkins.poc-h2hubgenai.com
+    annotations:
+      alb.ingress.kubernetes.io/ssl-passthrough: "true"
+      nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+      nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
