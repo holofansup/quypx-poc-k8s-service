@@ -45,7 +45,7 @@ ingress:
   hosts:
     - host: quypx-be.poc-h2hubgenai.com
       paths:
-        - path: /*
+        - path: /
           pathType: ImplementationSpecific
   tls: []
 
