@@ -15,5 +15,3 @@ controller:
     requests:
       cpu: 100m
       memory: 128Mi
-defaultBackend:
-  enabled: true  # Enable a default backend for handling 404 responses
