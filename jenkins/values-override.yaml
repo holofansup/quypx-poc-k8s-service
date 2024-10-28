@@ -11,3 +11,7 @@ persistence:
   enabled: true
   storageClass: gp2
   size: 20Gi
+
+admin:
+  username: "admin"
+  password: "admin"
