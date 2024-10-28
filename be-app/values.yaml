@@ -59,7 +59,7 @@ resources: #{}
 
 env: #[]
   - name: RAPIDAPI_KEY
-    value: "8829f5a5a9msh90a9323ec3e41cdp1d44e0jsndd6defdd77af"
+    value: "66208704f5msh5dbe5ac6f9d6e0dp1d976djsnbd326136d43e"
 
 # This is to setup the liveness and readiness probes more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
 livenessProbe:
