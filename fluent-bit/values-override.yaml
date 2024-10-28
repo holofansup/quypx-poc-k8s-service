@@ -10,7 +10,7 @@ config:
   ## https://docs.fluentbit.io/manual/pipeline/outputs ####
   outputs: |
     [OUTPUT]
-        Name kube_system_logs
+        Name cloudwatch_logs
         Match kubernetes.* AND kube.namespace == "kube-system"
         region ap-southeast-1
         log_group_name fluent-bit-kube-system
@@ -18,7 +18,7 @@ config:
         auto_create_group On
 
     [OUTPUT]
-        Name be_app_logs
+        Name cloudwatch_logs
         Match kubernetes.* AND kube.namespace == "be-app"
         region ap-southeast-1
         log_group_name fluent-bit-be-app
