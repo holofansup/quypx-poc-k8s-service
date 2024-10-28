@@ -11,7 +11,7 @@ config:
   outputs: |
     [OUTPUT]
         Name cloudwatch_logs
-        Match kubernetes.* AND kube.namespace == "kube-system"
+        Match kube.* AND kube.namespace == "kube-system"
         region ap-southeast-1
         log_group_name fluent-bit-kube-system
         log_stream_prefix kube-system-
@@ -19,7 +19,7 @@ config:
 
     [OUTPUT]
         Name cloudwatch_logs
-        Match kubernetes.* AND kube.namespace == "be-app"
+        Match kube.* AND kube.namespace == "be-app"
         region ap-southeast-1
         log_group_name fluent-bit-be-app
         log_stream_prefix be-app-
